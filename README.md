@@ -2,73 +2,112 @@
 
 ## Project Overview
 
-This project analyzes inventory data using SQL to monitor stock levels, identify low-stock products, calculate inventory value, and support inventory management decisions.
+This project uses SQL to analyze inventory data, monitor stock levels, calculate inventory value, and identify products requiring restocking.
 
 ## Business Problem
 
-Organizations need visibility into inventory levels to prevent stock shortages and optimize inventory investments. This project helps answer:
+Organizations need accurate inventory tracking to reduce stock shortages and improve operational efficiency. This project answers the following questions:
 
 - Which products are low in stock?
 - What is the total inventory value?
-- Which products contribute the most inventory value?
-- Which categories have the highest inventory levels?
+- Which products contribute the most value?
+- How is inventory distributed across categories?
 
-## Dataset
+## Project Files
 
-The dataset contains inventory information including:
+```text
+Data-Inventory-Management/
+│
+├── README.md
+├── mysql_setup.sql
+├── inventory_analysis.sql
+└── inventory_data.csv
+```
 
-- Product ID
-- Product Name
-- Category
-- Stock Quantity
-- Unit Price
+## Setup Instructions
 
-## Skills Demonstrated
+### Step 1: Open MySQL Workbench
 
-- SQL Queries
-- Data Analysis
-- Data Validation
-- Inventory Reporting
-- Business Intelligence
-- KPI Reporting
+Launch MySQL Workbench and connect to your local MySQL instance.
 
-## Key Analysis
+### Step 2: Run Setup Script
 
-### Inventory KPIs
-- Total Inventory Value
+Open and execute:
+
+```sql
+mysql_setup.sql
+```
+
+This script will:
+
+- Create the database
+- Create the inventory table
+- Load sample inventory data
+- Verify records
+- Generate basic KPIs
+
+### Step 3: Run Analysis Queries
+
+Open and execute:
+
+```sql
+inventory_analysis.sql
+```
+
+The script performs:
+
+- Inventory KPIs
+- Inventory Value Analysis
+- Low Stock Detection
+- Category Analysis
+- Data Validation Checks
+
+## Dataset Fields
+
+| Column | Description |
+|----------|------------|
+| product_id | Unique Product Identifier |
+| product_name | Product Name |
+| category | Product Category |
+| stock_quantity | Current Stock Level |
+| unit_price | Price per Unit |
+
+## Key KPIs
+
 - Total Products
 - Total Units in Stock
+- Total Inventory Value
+- Average Product Price
 - Low Stock Products
+- High-Value Products
 
-### Inventory Analysis
-- Inventory by Category
-- Highest Value Products
-- Low Stock Monitoring
-- Data Quality Checks
+## SQL Skills Demonstrated
+
+- SELECT Statements
+- Aggregate Functions
+- GROUP BY
+- ORDER BY
+- WHERE Clauses
+- Data Validation
+- Business KPI Reporting
+- Inventory Analytics
+
+## Business Insights
+
+- Identifies products requiring immediate restocking.
+- Highlights high-value inventory assets.
+- Analyzes stock distribution across product categories.
+- Supports inventory management decisions through data-driven reporting.
 
 ## Tools Used
 
-- SQL
 - MySQL
-- Excel
+- SQL
 - GitHub
-
-## Key Findings
-
-- Inventory value is concentrated among a few high-value products.
-- Several products require restocking based on low inventory thresholds.
-- Category-level analysis provides insight into stock distribution.
-- Data validation helps improve inventory accuracy.
-
-## Files Included
-
-- inventory_data.csv
-- inventory_analysis.sql
-- README.md
 
 ## Author
 
-Jaimini Patel
+**Jaimini Patel**
 
 Data Analyst | SQL | Power BI | Python
 
