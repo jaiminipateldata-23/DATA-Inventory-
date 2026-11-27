@@ -1,0 +1,13 @@
+product_id,product_name,category,stock_quantity,unit_price
+101,Laptop,Electronics,25,1200
+102,Mouse,Electronics,150,25
+103,Keyboard,Electronics,80,60
+104,Monitor,Electronics,30,300
+105,Printer,Office,10,250
+106,Desk Chair,Furniture,15,180
+107,Desk,Furniture,8,350
+108,Notebook,Office,200,5
+109,Webcam,Electronics,40,75
+110,Headset,Electronics,60,90
+111,Filing Cabinet,Furniture,12,220
+112,Scanner,Office,18,280
