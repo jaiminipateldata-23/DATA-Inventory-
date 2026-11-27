@@ -1,12 +1,16 @@
 # Data Inventory Management
 
+A SQL-based inventory analysis project designed to monitor stock levels, calculate inventory value, identify low-stock products, and support inventory management decisions through data-driven insights.
+
 ## Project Overview
 
 This project uses SQL to analyze inventory data, monitor stock levels, calculate inventory value, and identify products requiring restocking.
 
 ## Business Problem
 
-Organizations need accurate inventory tracking to reduce stock shortages and improve operational efficiency. This project answers the following questions:
+Organizations need accurate inventory tracking to reduce stock shortages, optimize inventory investments, and improve operational efficiency.
+
+This project answers the following business questions:
 
 - Which products are low in stock?
 - What is the total inventory value?
@@ -15,10 +19,11 @@ Organizations need accurate inventory tracking to reduce stock shortages and imp
 
 ## Project Files
 
-```text
+```text {preview="false"}
 Data-Inventory-Management/
 │
 ├── README.md
+├── LICENSE
 ├── mysql_setup.sql
 ├── inventory_analysis.sql
 └── inventory_data.csv
@@ -34,7 +39,7 @@ Launch MySQL Workbench and connect to your local MySQL instance.
 
 Open and execute:
 
-```sql
+```sql {preview="false"}
 mysql_setup.sql
 ```
 
@@ -50,13 +55,13 @@ This script will:
 
 Open and execute:
 
-```sql
+```sql {preview="false"}
 inventory_analysis.sql
 ```
 
 The script performs:
 
-- Inventory KPIs
+- Inventory KPI Analysis
 - Inventory Value Analysis
 - Low Stock Detection
 - Category Analysis
@@ -70,7 +75,7 @@ The script performs:
 | product_name | Product Name |
 | category | Product Category |
 | stock_quantity | Current Stock Level |
-| unit_price | Price per Unit |
+| unit_price | Price Per Unit |
 
 ## Key KPIs
 
@@ -84,20 +89,21 @@ The script performs:
 ## SQL Skills Demonstrated
 
 - SELECT Statements
-- Aggregate Functions
+- WHERE Clauses
+- Aggregate Functions (SUM, COUNT, AVG, MIN, MAX)
 - GROUP BY
 - ORDER BY
-- WHERE Clauses
 - Data Validation
-- Business KPI Reporting
 - Inventory Analytics
+- KPI Reporting
 
 ## Business Insights
 
-- Identifies products requiring immediate restocking.
-- Highlights high-value inventory assets.
-- Analyzes stock distribution across product categories.
-- Supports inventory management decisions through data-driven reporting.
+- Identifies products that require immediate restocking.
+- Highlights products contributing the highest inventory value.
+- Provides visibility into inventory distribution across categories.
+- Supports inventory planning and operational decision-making.
+- Improves data quality through validation and integrity checks.
 
 ## Tools Used
 
@@ -105,14 +111,26 @@ The script performs:
 - SQL
 - GitHub
 
+## License
+
+This project is licensed under the MIT License.
+
+The MIT License is a permissive open-source license that allows others to use, copy, modify, and distribute this project while retaining the original copyright and license notice.
+
+For more information, see the LICENSE file included in this repository.
+
 ## Author
 
 **Jaimini Patel**
 
 Data Analyst | SQL | Power BI | Python
 
-LinkedIn:
+**LinkedIn:**  
 https://www.linkedin.com/in/jaimini-patel-data-analyst
 
-GitHub:
+**GitHub:**  
 https://github.com/jaiminipateldata-23
+
+---
+
+Thank you for reviewing this project. This repository demonstrates practical SQL skills in inventory analysis, KPI reporting, data validation, and business decision support.
